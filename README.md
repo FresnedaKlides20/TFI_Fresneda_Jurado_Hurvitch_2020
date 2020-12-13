@@ -3,9 +3,3 @@ Repositorio donde desarrollamos lo que es el trabajo practico integrador del seg
 
 
 
-
-integrantes 
-
-Fresneda,Klides Silvana  42935735
-Hurvitz,Jonathan David
-Jurado, Luz Mara 
