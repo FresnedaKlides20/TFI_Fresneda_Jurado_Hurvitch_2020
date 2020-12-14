@@ -106,11 +106,11 @@ fclose(arch3);
 
 
 
-void clave(char cadena[10]){
+void clave(char *cadena[10]){
 	int i = 0;	/* Indica la posición del caracter leído en la cadena */
 	char caracter = getch();
 	while (i < 10 && caracter != 13) {
-		cadena[i] = caracter;
+		*cadena[i] = caracter;
 		i++;
 		printf("*");
 		caracter = getch();
@@ -190,13 +190,13 @@ scanf("%f",&uno.Peso );
 _flushall();
 printf("\t\t\tingresa fecha de naciminto /d/m/año/\n");
 printf("\t\t\tingresa fecha de naciminto /d/ ");
-scanf("%d",&uno.Fecha.dia );	
+/*scanf("%d",&uno.fecha.dia );	*/
 _flushall();
 printf("\t\t\tingresa fecha de naciminto /m/ ");
-scanf("%d",&uno.Fecha.mes );
+/*scanf("%d",&uno.Fecha.mes );*/
 _flushall();
 printf("\t\t\tingresa fecha de naciminto /año/ ");
-gets(uno.Fecha.anio );
+/*gets(uno.Fecha.anio );*/
 fwrite(&uno,sizeof(Mascota),1,arch1);
 fclose(arch1);
 
